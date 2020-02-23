@@ -8,8 +8,8 @@ router.use(function(req,res,next)
     next();
 
 })
-router.route('/signup').post(usersController.signUp);
-router.route('/signin').post(usersController.signIn);
+router.route('/register').post(usersController.signUp);
+router.route('/login').post(usersController.signIn);
 router.route('/secret').get(usersController.secret);
 
 
