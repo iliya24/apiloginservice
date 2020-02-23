@@ -28,10 +28,9 @@ signUp: async (req,res,next)=>
             res.send(result.user);
 
             }
-        );
+        ); 
         
 },
-
 
 signIn: async (req,res,next)=>
     {
