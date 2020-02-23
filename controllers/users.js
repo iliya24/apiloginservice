@@ -19,16 +19,17 @@ module.exports={
 
 signUp: async (req,res,next)=>
     {
-        console.log('users signUp controller method');
-        console.log(req.body);
+        res.send("result.user");
+        // console.log('users signUp controller method');
+        // console.log(req.body);
        
-        auth.createUserWithEmailAndPassword(req.body.email,req.body.password).then(
-            result=>{
-                console.log('user:'+result.user);
-            res.send(result.user);
+        // auth.createUserWithEmailAndPassword(req.body.email,req.body.password).then(
+        //     result=>{
+        //         console.log('user:'+result.user);
+        //     res.send(result.user);
 
-            }
-        ); 
+        //     }
+        // ); 
         
 },
 
