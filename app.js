@@ -16,7 +16,7 @@ app.use('/users',require('./routes/users'));
 
 
 //Start Server
-const port=process.env.port ||3000;
+const port=process.env.port ||8080;
 app.listen(port);
 console.log('start server at: '+port);
 
